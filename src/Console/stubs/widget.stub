@@ -1,0 +1,28 @@
+<?php
+
+namespace {{namespace}};
+
+use Brunolobo\Widgets\AbstractWidget;
+
+class {{class}} extends AbstractWidget
+{
+    /**
+     * Array de configuração.
+     *
+     * @var array
+     */
+    protected $config = [];
+
+    /**
+     * Este método é o proncipal do widget.
+     * Retorne view() ou outro conteúdo para exibir.
+     */
+    public function run()
+    {
+        //
+
+        return view('{{view}}', [
+            'config' => $this->config,
+        ]);
+    }
+}

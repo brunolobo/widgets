@@ -1,0 +1,45 @@
+{
+    "name": "brunolobo/widgets",
+    "description": "Pacote de widgets originalmente criado por Arrilot, otimizado para uso no Pacto por Brunolobo.",
+    "license": "MIT",
+    "keywords": ["pactocrm"],
+    "authors": [
+        {
+            "name": "Bruno Lobo",
+            "email": "bruno.lobo@sppost.com.br"
+        }
+    ],
+    "homepage": "https://github.com/Brunolobo/widgets",
+    "require": {
+        "php": ">=5.5.9",
+        "illuminate/support": ">=5.1",
+        "illuminate/contracts": ">=5.1",
+        "illuminate/view": ">=5.1",
+        "illuminate/container": ">=5.1",
+        "illuminate/console": ">=5.1"
+    },
+    "require-dev": {
+        "phpunit/phpunit": "~4.0"
+    },
+    "autoload": {
+        "psr-4": {
+            "Brunolobo\\Widgets\\": "src/"
+        }
+    },
+    "autoload-dev": {
+        "psr-4": {
+            "Brunolobo\\Widgets\\Test\\": "tests"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "Brunolobo\\Widgets\\ServiceProvider"
+            ],
+            "aliases": {
+                "Widget": "Brunolobo\\Widgets\\Facade",
+                "AsyncWidget": "Brunolobo\\Widgets\\AsyncFacade"
+            }
+        }
+    }
+}
